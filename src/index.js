@@ -16,3 +16,8 @@ function copy() {
 function blink() {
     console.log("copied")
 }
+
+function clearTextarea() {
+    inputTextarea.value = ""
+    inputTextarea.dispatchEvent(new Event("input"))
+}
