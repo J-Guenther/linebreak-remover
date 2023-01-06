@@ -1,5 +1,5 @@
 {
-  "name": "pdf-clipboard-sanitizer",
+  "name": "linebreak-remover",
   "version": "1.0.0",
   "description": "Removes unwanted formatting from text in your clipboard copied from a PDF",
   "scripts": {
