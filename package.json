@@ -1,0 +1,22 @@
+{
+  "name": "pdf-clipboard-sanitizer",
+  "version": "1.0.0",
+  "description": "Removes unwanted formatting from text in your clipboard copied from a PDF",
+  "scripts": {
+    "cleanup": "rmdir /q /s .parcel-cache dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run cleanup && parcel src/index.html",
+    "build": "npm run cleanup && parcel build --public-url . src/index.html",
+    "css": "npx tailwindcss -i src/style.css -o ./dist/output.css --watch"
+  },
+  "author": "Jannik Günther",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "toastify-js": "^1.12.0"
+  }
+}
