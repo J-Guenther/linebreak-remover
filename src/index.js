@@ -14,10 +14,14 @@ function copy() {
 }
 
 function blink() {
-    console.log("copied")
+    outputTextarea.classList.add('flash');
 }
 
 function clearTextarea() {
     inputTextarea.value = ""
     inputTextarea.dispatchEvent(new Event("input"))
 }
+
+outputTextarea.addEventListener('transitionend', function() {
+    outputTextarea.classList.remove('flash');
+});
